@@ -3,7 +3,7 @@ import 'package:magnet_ui/magnet_ui.dart';
 
 import 'pages/buttons/buttons_page.dart';
 import 'pages/initial/initial_page.dart';
-import 'pages/text_fields/text_fields_page.dart';
+import 'pages/inputs/inputs_page.dart';
 
 void main() => runApp(const MagnetUI());
 
@@ -24,7 +24,7 @@ class _MagnetUIState extends State<MagnetUI> {
       routes: {
         InitialPage.id: (context) => const InitialPage(),
         ButtonsPage.id: (context) => const ButtonsPage(),
-        TextFieldsPage.id: (context) => const TextFieldsPage(),
+        InputsPage.id: (context) => const InputsPage(),
       },
     );
   }

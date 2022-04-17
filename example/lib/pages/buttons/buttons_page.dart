@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:magnet_ui/components/buttons/icon_location.dart';
 import 'package:magnet_ui/magnet_ui.dart';
 import 'package:unicons/unicons.dart';
 

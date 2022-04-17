@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:magnet_ui/magnet_ui.dart';
 
 import '../buttons/buttons_page.dart';
-import '../text_fields/text_fields_page.dart';
+import '../inputs/inputs_page.dart';
 
 class InitialPage extends StatelessWidget {
   static const id = '/';
@@ -27,9 +27,8 @@ class InitialPage extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             FilledButton(
-              onPressed: () =>
-                  Navigator.of(context).pushNamed(TextFieldsPage.id),
-              text: 'Go to text fields page',
+              onPressed: () => Navigator.of(context).pushNamed(InputsPage.id),
+              text: 'Go to inputs page',
             ),
           ],
         ),

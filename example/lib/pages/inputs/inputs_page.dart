@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:magnet_ui/magnet_ui.dart';
 import 'package:unicons/unicons.dart';
 
-class TextFieldsPage extends StatelessWidget {
-  static const id = '/text_fields_page';
+class InputsPage extends StatelessWidget {
+  static const id = '/inputs_page';
 
-  const TextFieldsPage({Key? key}) : super(key: key);
+  const InputsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Text Fields'),
+        title: const Text('Inputs'),
         leading: Builder(
           builder: (context) {
             return IconButton(
@@ -24,6 +25,17 @@ class TextFieldsPage extends StatelessWidget {
             );
           },
         ),
+      ),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          Text(
+            'Input text',
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
+          const SizedBox(height: 16),
+          const InputText(hintText: 'Text field'),
+        ],
       ),
     );
   }
