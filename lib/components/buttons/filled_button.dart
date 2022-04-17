@@ -9,7 +9,7 @@ class FilledButton extends StatelessWidget {
   // Properties to manipulate the text
   final bool enableText;
   final String? text;
-  final TextStyle? texStyle;
+  final TextStyle? textStyle;
 
   // Properties to manipulate the icon
   final bool enableIcon;
@@ -29,7 +29,7 @@ class FilledButton extends StatelessWidget {
     required this.onPressed,
     this.enableText = true,
     this.text,
-    this.texStyle,
+    this.textStyle,
     this.enableIcon = false,
     this.icon,
     this.iconColor,
@@ -93,7 +93,7 @@ class FilledButton extends StatelessWidget {
               Text(
                 text!,
                 overflow: TextOverflow.ellipsis,
-                style: texStyle ??
+                style: textStyle ??
                     Theme.of(context).textTheme.labelLarge!.copyWith(
                           color: Theme.of(context).colorScheme.onPrimary,
                         ),
