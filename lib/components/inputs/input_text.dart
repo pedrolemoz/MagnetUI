@@ -112,7 +112,7 @@ class InputText extends StatelessWidget {
                 : Theme.of(context).colorScheme.onSurface,
           ),
       decoration: InputDecoration(
-        contentPadding: padding ?? const EdgeInsets.all(16),
+        contentPadding: padding ?? const EdgeInsets.all(12),
         fillColor: hasError
             ? Theme.of(context).colorScheme.error
             : Theme.of(context).colorScheme.surface,
