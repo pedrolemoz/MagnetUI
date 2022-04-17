@@ -5,6 +5,7 @@ import 'icon_location.dart';
 class FilledButton extends StatelessWidget {
   // Main functionality
   final Function() onPressed;
+  final bool enableButton;
 
   // Properties to manipulate the text
   final bool enableText;
@@ -39,6 +40,7 @@ class FilledButton extends StatelessWidget {
     this.height,
     this.elevation,
     this.borderRadius,
+    this.enableButton = true,
   })  : assert(
           !(!enableText && !enableIcon),
           'You must provide either a text or an icon to the button',
@@ -56,7 +58,7 @@ class FilledButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      onPressed: onPressed,
+      onPressed: enableButton ? onPressed : null,
       color: color ?? Theme.of(context).colorScheme.primary,
       height: height ?? 48,
       elevation: elevation ?? 0,
