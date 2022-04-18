@@ -1,4 +1,4 @@
-import '../foundation/app_state.dart';
+import 'app_state.dart';
 
 class IdleState implements AppState {
   @override
