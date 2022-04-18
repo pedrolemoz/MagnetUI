@@ -1,5 +1,8 @@
 import 'app_state.dart';
 
-class IdleState extends AppState {
-  IdleState([String? message]) : super(message);
+class IdleState implements AppState {
+  @override
+  final String? message;
+
+  IdleState([this.message]);
 }

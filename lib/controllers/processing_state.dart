@@ -1,5 +1,3 @@
 import 'app_state.dart';
 
-class ProcessingState extends AppState {
-  ProcessingState([String? message]) : super(message);
-}
+abstract class ProcessingState extends AppState {}
