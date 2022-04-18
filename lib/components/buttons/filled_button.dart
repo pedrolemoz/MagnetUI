@@ -60,8 +60,10 @@ class FilledButton extends StatelessWidget {
     return MaterialButton(
       onPressed: enableButton ? onPressed : null,
       color: color ?? Theme.of(context).colorScheme.primary,
+      disabledColor: color?.withOpacity(0.5) ??
+          Theme.of(context).colorScheme.primary.withOpacity(0.5),
       height: height ?? 48,
-      elevation: elevation ?? 0,
+      elevation: enableButton ? elevation ?? 0 : 0,
       shape: RoundedRectangleBorder(
         side: BorderSide.none,
         borderRadius: BorderRadius.circular(borderRadius ?? 8),
