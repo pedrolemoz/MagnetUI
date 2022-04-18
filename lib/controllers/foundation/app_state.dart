@@ -1,7 +1,7 @@
 class AppState {
   final String message;
 
-  const AppState(this.message);
+  AppState(this.message);
 
   @override
   bool operator ==(Object other) {
